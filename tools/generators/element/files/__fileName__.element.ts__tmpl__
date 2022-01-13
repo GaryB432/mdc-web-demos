@@ -1,0 +1,18 @@
+import './<%= fileName %>.element.scss';
+
+export class <%= className %>Element extends HTMLElement {
+  public static observedAttributes = [];
+
+  connectedCallback() {
+    const title = '<%= fileName %>';
+    this.innerHTML = `
+
+    <button class="<%= fileName %>-button mdc-button mdc-button--raised">
+      <span class="mdc-button__ripple"></span>
+      <span class="mdc-button__label"><%= className %></span>
+    </button>
+
+      `;
+  }
+}
+customElements.define('app-<%= fileName %>', <%= className %>Element);

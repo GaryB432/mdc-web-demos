@@ -1,0 +1,21 @@
+import { <%= className %>Element } from './<%= fileName %>.element';
+
+describe('<%= className %>Element', () => {
+  let <%= propertyName %>El: <%= className %>Element;
+
+  beforeEach(() => {
+    <%= propertyName %>El = new <%= className %>Element();
+  });
+
+  it('should create successfully', () => {
+    expect(<%= propertyName %>El).toBeTruthy();
+  });
+
+  it('should have a greeting', () => {
+    <%= propertyName %>El.connectedCallback();
+
+    expect(<%= propertyName %>El.querySelector('.mdc-button__label').innerHTML).toContain(
+      '<%= className %>'
+    );
+  });
+});
