@@ -14,6 +14,8 @@ describe('AppElement', () => {
   it('should have a greeting', () => {
     app.connectedCallback();
 
-    expect(app.querySelector('h1').innerHTML).toContain('Welcome adopt-a-pup');
+    expect(app.querySelector('.mdc-button__label').innerHTML).toContain(
+      'adopt-a-pup'
+    );
   });
 });

@@ -9,7 +9,7 @@ export class AppElement extends HTMLElement {
 
     <button class="foo-button mdc-button mdc-button--raised">
       <span class="mdc-button__ripple"></span>
-      <span class="mdc-button__label">Button</span>
+      <span class="mdc-button__label">${title}</span>
     </button>
 
       `;
