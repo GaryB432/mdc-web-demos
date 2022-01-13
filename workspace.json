@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "adopt-a-pup": "apps/adopt-a-pup",
+    "adopt-a-pup-e2e": "apps/adopt-a-pup-e2e"
+  }
+}

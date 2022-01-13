@@ -1,0 +1,28 @@
+{
+  "root": "apps/adopt-a-pup-e2e",
+  "sourceRoot": "apps/adopt-a-pup-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/adopt-a-pup-e2e/cypress.json",
+        "devServerTarget": "adopt-a-pup:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "adopt-a-pup:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/adopt-a-pup-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["adopt-a-pup"]
+}
