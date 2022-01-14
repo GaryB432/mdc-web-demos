@@ -1,0 +1,30 @@
+@use '@material/card';
+@use '@material/typography';
+@use '@material/shape';
+
+@include card.core-styles;
+
+$card-text-label-baseline: 16px;
+$card-secondary-baseline: 16px;
+$card-radius: 16px;
+
+.adopt-a-pup-card {
+  @include shape.radius($card-radius);
+}
+
+.mdc-card__actions {
+  justify-content: flex-end;
+}
+
+.adopt-a-pup-card__secondary {
+  margin: 0 16px;
+  @include typography.typography(body2);
+  @include typography.baseline-top(24px);
+  @include typography.baseline-bottom(-$card-secondary-baseline);
+}
+
+.adopt-a-pup-card__text-label {
+  margin: 0 16px;
+  @include typography.typography(headline6);
+  @include typography.baseline-bottom(-$card-text-label-baseline);
+}

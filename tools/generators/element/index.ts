@@ -20,8 +20,8 @@ export default async function (tree: Tree, schema: Schema) {
   generateFiles(
     tree,
     joinPathFragments(__dirname, './files'),
-    joinPathFragments(srcRoot, nms.fileName),
-    { schema, ...nms, tmpl: '' }
+    joinPathFragments(srcRoot, 'elements', nms.fileName),
+    { schema, ...nms, tagName: `mdd-${nms.fileName}`, tmpl: '' }
   );
   await formatFiles(tree);
   return () => {

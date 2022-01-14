@@ -1,0 +1,16 @@
+@use '@material/tab';
+@use '@material/tab-indicator';
+@use '@material/ripple';
+
+.adopt-a-pup-tab {
+  @include tab.text-label-color(white);
+  @include tab.icon-color(white);
+  @include ripple.surface;
+  .mdc-tab__ripple {
+    @include ripple.states;
+  }
+}
+
+.adopt-a-pup-tab-indicator {
+  @include tab-indicator.underline-color(white);
+}

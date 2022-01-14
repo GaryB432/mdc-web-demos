@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@material/theme' with (
+  $background: #fce4ec,
+  $primary: #880e4f,
+  $secondary: #018786,
+  $on-primary: #ffffff,
+  $on-secondary: #ffffff
+);
+
+// @use '@material/button';
+@use '@material/button/mdc-button';
+@use '@material/card/mdc-card';
+@use '@material/chips/styles';
+@use '@material/icon-button/_icon-button';
+@use '@material/layout-grid/mdc-layout-grid';
+// @use '@material/ripple';
+// @use '@material/shape';
+@use '@material/tab-bar/mdc-tab-bar';
+@use '@material/tab-indicator';
+@use '@material/tab-indicator/mdc-tab-indicator';
+@use '@material/tab-scroller/mdc-tab-scroller';
+@use '@material/tab/mdc-tab';
+@use '@material/top-app-bar/mdc-top-app-bar';
+@use '@material/typography';
+
+body {
+  margin: 0;
+  background: #fce4ec;
+}
+
+@include icon-button.core-styles;
+
+.adopt-a-pup--fixed-adjust {
+  padding-top: 112px;
+}

@@ -15,4 +15,4 @@ export class <%= className %>Element extends HTMLElement {
       `;
   }
 }
-customElements.define('app-<%= fileName %>', <%= className %>Element);
+customElements.define('<%= tagName %>', <%= className %>Element);
