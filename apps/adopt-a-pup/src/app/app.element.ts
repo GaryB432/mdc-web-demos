@@ -8,14 +8,7 @@ export class AppElement extends HTMLElement {
   public static observedAttributes = [];
 
   connectedCallback() {
-    this.innerHTML = `
-    <mdd-top-app-bar class="mdc-top-app-bar"></mdd-top-app-bar>
-    <main class="adopt-a-pup--fixed-adjust">
-      <div class="adopt-a-pup-puppers adopt-a-pup-body mdc-layout-grid">
-        <div class="mdc-layout-grid__inner cards"></div>
-      </div>
-    </main>
-      `;
+    this.innerHTML = require('./app.element.html');
     this.init();
   }
   private init(): void {

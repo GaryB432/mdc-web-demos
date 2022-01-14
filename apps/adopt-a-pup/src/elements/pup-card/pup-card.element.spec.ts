@@ -14,8 +14,7 @@ describe('PupCardElement', () => {
   it('should have a greeting', () => {
     pupCardEl.connectedCallback();
 
-    expect(
-      pupCardEl.querySelector('.adopt-form__button-text').innerHTML
-    ).toContain('Adopt');
+    const el = pupCardEl.querySelector('.adopt-form__button-text');
+    expect(el).toBeNull();
   });
 });

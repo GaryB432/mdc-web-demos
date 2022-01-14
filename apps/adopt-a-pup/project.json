@@ -21,7 +21,8 @@
           "apps/adopt-a-pup/src/assets"
         ],
         "styles": ["apps/adopt-a-pup/src/styles.scss"],
-        "scripts": []
+        "scripts": [],
+        "webpackConfig": "apps/adopt-a-pup/webpack.config.js"
       },
       "configurations": {
         "production": {

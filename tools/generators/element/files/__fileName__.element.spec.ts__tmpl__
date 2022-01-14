@@ -14,8 +14,8 @@ describe('<%= className %>Element', () => {
   it('should have a greeting', () => {
     <%= propertyName %>El.connectedCallback();
 
-    expect(<%= propertyName %>El.querySelector('.mdc-button__label').innerHTML).toContain(
-      '<%= className %>'
+    expect(<%= propertyName %>El.innerHTML).toContain(
+      'test-file-stub'
     );
   });
 });

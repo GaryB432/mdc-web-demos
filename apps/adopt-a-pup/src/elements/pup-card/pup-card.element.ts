@@ -15,27 +15,7 @@ export class PupCardElement extends HTMLElement {
   public static observedAttributes = [];
 
   connectedCallback() {
-    this.innerHTML = `
-    <div
-      class="adopt-a-pup-image 
-        mdc-card__media
-        mdc-card__media--square" 
-        style></div>
-      <div class="adopt-a-pup-card__text-label">name</div>
-      <div class="adopt-a-pup-card__secondary mdc-typography--body2">notes</div>
-      <div class="mdc-card__actions">
-      <div class="mdc-card__action-buttons">
-        <button
-          class="mdc-button mdc-card__action mdc-card__action--button adopt-form__button"
-        >
-          <span class="mdc-button__ripple"></span
-          ><i class="material-icons mdc-button__icon adopt-form__button-icon"
-            >pets</i
-          ><span class="mcd-button__label adopt-form__button-text">Adopt</span>
-        </button>
-      </div>
-    </div>
-    `;
+    this.innerHTML = require('./pup-card.element.html');
     this.classList.add('mdc-card');
     this.classList.add('adopt-a-pup-card');
   }

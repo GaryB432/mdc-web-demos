@@ -5,14 +5,7 @@ export class <%= className %>Element extends HTMLElement {
 
   connectedCallback() {
     const title = '<%= fileName %>';
-    this.innerHTML = `
-
-    <button class="<%= fileName %>-button mdc-button mdc-button--raised">
-      <span class="mdc-button__ripple"></span>
-      <span class="mdc-button__label"><%= className %></span>
-    </button>
-
-      `;
+    this.innerHTML = require('./<%= fileName %>.element.html');
   }
 }
 customElements.define('<%= tagName %>', <%= className %>Element);

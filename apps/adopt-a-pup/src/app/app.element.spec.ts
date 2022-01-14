@@ -14,6 +14,6 @@ describe('AppElement', () => {
   it('should have a greeting', () => {
     app.connectedCallback();
 
-    expect(app.innerHTML).toContain('adopt-a-pup');
+    expect(app.innerHTML).toContain('test-file-stub');
   });
 });

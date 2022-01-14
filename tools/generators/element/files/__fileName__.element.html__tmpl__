@@ -1,0 +1,4 @@
+<button class="<%= fileName %>-button mdc-button mdc-button--raised">
+  <span class="mdc-button__ripple"></span>
+  <span class="mdc-button__label"><%= className %></span>
+</button>
