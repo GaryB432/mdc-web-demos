@@ -1,4 +1,4 @@
-# Mdc Web Demos
+# Material Components Web Demos
 
 An updated version of the [Glitch reference app](https://glitch.com/edit/#!/adopt-a-pup)
 
