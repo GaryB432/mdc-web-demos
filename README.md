@@ -1,6 +1,7 @@
 # Material Components Web Demos
 
-An updated version of the [**Adopt-a-Pup** Glitch reference app](https://glitch.com/edit/#!/adopt-a-pup)
+
+An updated version of the [**Adopt A Pup** Glitch reference app](https://glitch.com/~adopt-a-pup)
 
 ## Features
 
