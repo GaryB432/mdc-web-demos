@@ -13,7 +13,6 @@ describe('AppElement', () => {
 
   it('should have a greeting', () => {
     app.connectedCallback();
-
-    expect(app.innerHTML).toContain('test-file-stub');
+    expect(app.querySelectorAll('.mdd-testing').length).toEqual(1);
   });
 });

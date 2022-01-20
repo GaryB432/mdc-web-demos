@@ -12,7 +12,7 @@ module.exports = {
   },
   moduleFileExtensions: ['ts', 'js'],
   moduleNameMapper: {
-    '\\html$': '<rootDir>/__mocks__/fileMock.js',
+    '\\html$': '<rootDir>/src/html-mock.ts',
   },
   coverageDirectory: '../../coverage/apps/adopt-a-pup',
 };
